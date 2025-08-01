@@ -29,8 +29,8 @@ casts	        VARCHAR(1000),
 country	        VARCHAR(150),
 date_added    	VARCHAR(50),
 release_year	INT,
-rating	      VARCHAR(10),
-duration	    VARCHAR(15),
+rating	        VARCHAR(10),
+duration	      VARCHAR(15),
 listed_in    	VARCHAR(100),
 description     VARCHAR(250)
 );

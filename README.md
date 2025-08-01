@@ -17,7 +17,7 @@ The dataset for  this project is sourced from the Kaggle dataset:
 - **Dataset Link:** [Movies Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 
 ## Schema
-'''sql
+```sql
 DROP TABLE IF EXISTS NETFLIX;
 CREATE TABLE NETFLIX
 (show_id VARCHAR(6),
@@ -33,4 +33,4 @@ duration	VARCHAR(15),
 listed_in	VARCHAR(100),
 description VARCHAR(250)
 );
-'''
+```

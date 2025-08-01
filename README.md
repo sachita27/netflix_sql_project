@@ -17,6 +17,7 @@ The dataset for  this project is sourced from the Kaggle dataset:
 - **Dataset Link:** [Movies Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 
 ## Schema
+
 ```sql
 DROP TABLE IF EXISTS NETFLIX;
 CREATE TABLE NETFLIX
@@ -34,4 +35,13 @@ duration	   VARCHAR(15),
 listed_in    	VARCHAR(100),
 description     VARCHAR(250)
 );
+```
+## Business Problems and Solutions
+
+### 1. Count the number of Movies vs TV Shows
+
+```sql
+SELECT TYPE, COUNT(*) AS total_content
+FROM NETFLIX
+GROUP BY TYPE
 ```
